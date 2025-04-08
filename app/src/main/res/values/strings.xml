@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Task Manager App</string>
+    <string name="add_task">Add Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="save_task">Save Task</string>
+    <string name="hint_task_title">Task Title</string>
+    <string name="hint_task_description">Description</string>
+    <string name="due_date_label">Due Date:</string>
+    <string name="select_due_date">Tap to select due date</string>
+    <string name="edit_task_title">Edit Task</string>
+    <string name="add_new_task_title">Add New Task</string>
+    <string name="delete_confirmation_title">Delete Task</string>
+    <string name="delete_confirmation_message">Are you sure you want to delete \'%1$s\'?</string>
+    <string name="task_deleted_toast">Task deleted</string>
+    <string name="task_saved_toast">Task saved</string>
+    <string name="error_loading_task_toast">Error loading task</string>
+    <string name="title_required_error">Title is required</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="due_date_required_error">Due date is required</string>
+    <string name="edit">Edit</string>
+</resources>

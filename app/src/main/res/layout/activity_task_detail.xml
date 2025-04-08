@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.TaskDetailActivity">
+
+    <TextView
+        android:id="@+id/detail_text_view_title_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="Task:"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/detail_text_view_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_title_label"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/detail_text_view_description_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_title"
+        android:layout_marginTop="16dp"
+        android:text="Description:"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/detail_text_view_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_description_label"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/detail_text_view_due_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_description"
+        android:layout_marginTop="16dp"
+        android:text="Due Date:"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <TextView
+        android:id="@+id/detail_text_view_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detail_text_view_due_date_label"
+        android:layout_marginTop="4dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:text="" />
+
+
+    <LinearLayout
+        android:id="@+id/detail_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detail_text_view_due_date"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/detail_button_cancel"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/detail_button_edit"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/detail_button_delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:textColor="?attr/colorError" />
+    </LinearLayout>
+
+</RelativeLayout>
